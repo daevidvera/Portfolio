@@ -1,5 +1,6 @@
 html, body {
     width: 100%;
+    background-color: #1e1e1e
 }
 
 
@@ -10,10 +11,6 @@ html, body {
     background-color: #1e1e1e;
 }
 
-#home {
-    height: 700px;
-    width: 100%;
-}
 
 
 
@@ -23,7 +20,7 @@ html, body {
     padding: 5%;
 } */
 
-#projects, #courses, #about {
+#projects, #courses, #about, #research, #home {
     min-height: 100vh;
 }
 #logo-panel {
@@ -135,7 +132,6 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .profile-container {
         flex-direction: column;
@@ -153,18 +149,18 @@ nav a:hover {
 .profile-websites {
     display: flex;
     justify-content: center;
-    gap: 1rem; /* cleaner spacing between icons */
-    margin-top: 1.2rem; /* space between h2 and icons */
+    gap: 1rem; 
+    margin-top: 1.2rem; 
 }
 
 .profile-websites .bi {
-    font-size: 1.75rem; /* increase icon size */
-    color: #E0B85F;      /* match heading color */
+    font-size: 1.75rem; 
+    color: #E0B85F;      
     transition: color 0.3s ease;
 }
 
 .profile-websites .bi:hover {
-    color: #f1d488; /* lighter gold hover */
+    color: #f1d488; 
     cursor: pointer;
 }
 
@@ -183,6 +179,36 @@ nav a:hover {
 h2 {
     color:#E0B85F;
 }
+
+.research-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #bbb;
+}
+
+.research-content {
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 1.5rem;             
+    justify-content: flex-start; 
+    padding: 1rem;
+}
+.custom-research-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+
+
+
 
 .project-container {
     display: flex;
@@ -206,11 +232,7 @@ h2 {
     color: #bbb;
 }
 
-.custom-hover-card:hover {
-    background-color: #373432; 
-    transform: scale(1.03);
-    box-shadow: #82807f;
-  }
+
 
 
   .project-content {
@@ -234,24 +256,9 @@ h2 {
     }
 }
 
-.custom-courses-card {
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
 
-.custom-courses-card:hover {
-    transform: scale(1.02);
-}
 
-.custom-courses-card a {
-    color: #E0B85F;
-    text-decoration: none;
-}
 
-.custom-courses-card a:hover {
-    text-decoration: underline;
-}
 
 .course-content {
     display: flex;
@@ -274,4 +281,18 @@ h2 {
     
 }
 
+.custom-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.custom-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.custom-card a {
+    color: #E0B85F;
+    text-decoration: none;
+}
