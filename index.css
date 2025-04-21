@@ -1,0 +1,277 @@
+html, body {
+    width: 100%;
+}
+
+
+
+
+#root {
+    width: 100%;
+    background-color: #1e1e1e;
+}
+
+#home {
+    height: 700px;
+    width: 100%;
+}
+
+
+
+/* #experience {
+    height: 800px;
+    width: 100%;
+    padding: 5%;
+} */
+
+#projects, #courses, #about {
+    min-height: 100vh;
+}
+#logo-panel {
+    justify-items: center;
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#footer {
+    width: 100%;
+    height: 80px;
+}
+
+#logo-panel > img {
+    max-width: 80%;
+    max-height: 80%
+}
+
+nav a:hover {
+    cursor: pointer;
+}
+
+.title {
+    margin-left: 10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contact .bi {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    color: #ddd;
+}
+
+.contact .bi:hover {
+    color: #bbb;
+    cursor: pointer;
+}
+
+#footer h6 {
+    color: #eee;
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    height: 500px;
+    width: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 3rem;
+}
+
+
+.profile-content h1, 
+.profile-content h2 {
+    margin: 0; 
+}
+
+.profile-content h1 {
+    font-weight: 100;
+}
+
+.profile-content h2 {
+    margin-top: 0.5rem; 
+}
+
+
+.profile-content {
+    display: flex;
+    color: #E0B85F;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    margin-left: 10%;
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    .profile-content {
+        margin-left: 0; 
+    }
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        height: 350px;
+        width: 350px;
+    }
+}
+
+.profile-websites {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* cleaner spacing between icons */
+    margin-top: 1.2rem; /* space between h2 and icons */
+}
+
+.profile-websites .bi {
+    font-size: 1.75rem; /* increase icon size */
+    color: #E0B85F;      /* match heading color */
+    transition: color 0.3s ease;
+}
+
+.profile-websites .bi:hover {
+    color: #f1d488; /* lighter gold hover */
+    cursor: pointer;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #bbb;
+}
+
+
+h2 {
+    color:#E0B85F;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #bbb;
+}
+
+.courses-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #bbb;
+}
+
+.custom-hover-card:hover {
+    background-color: #373432; 
+    transform: scale(1.03);
+    box-shadow: #82807f;
+  }
+
+
+  .project-content {
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 1.5rem;             
+    justify-content: flex-start; 
+    padding: 1rem;
+  }
+
+  .project-content a {
+    color: #E0B85F;
+    text-decoration: none;
+  }
+
+
+  @media (max-width: 768px) {
+    .project-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.custom-courses-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.custom-courses-card:hover {
+    transform: scale(1.02);
+}
+
+.custom-courses-card a {
+    color: #E0B85F;
+    text-decoration: none;
+}
+
+.custom-courses-card a:hover {
+    text-decoration: underline;
+}
+
+.course-content {
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 1.5rem;             
+    justify-content: flex-start; 
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .course-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.about-container a {
+    color: #E0B85F;
+    text-decoration: none;
+    
+}
+
+
