@@ -1,6 +1,7 @@
 html, body {
     width: 100%;
-    background-color: #1e1e1e
+    background-color: #1e1e1e;
+    scroll-padding-top: 100px;
 }
 
 
@@ -43,6 +44,19 @@ html, body {
 
 nav a:hover {
     cursor: pointer;
+}
+
+.profile-name {
+    font-size: 3rem;            /* Make it large */
+    font-weight: 700;           /* Bold */
+    letter-spacing: 1.5px;      /* Slight spacing */
+    color: #E0B85F;             
+    text-shadow: 0 2px 8px rgba(224,184,95,0.12), 0 1px 0 #000; /* Subtle shadow */
+    border-bottom: 4px solid #E0B85F;   /* Gold underline */
+    display: inline-block;
+    padding-bottom: 0.15em;
+    margin-bottom: 0.4em;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
 }
 
 .title {
@@ -295,4 +309,22 @@ h2 {
 .custom-card a {
     color: #E0B85F;
     text-decoration: none;
+}
+.nav-link {
+  position: relative;
+  color: #E0B85F !important;
+  transition: color 0.2s;
+}
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #E0B85F;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0; bottom: 0;
+}
+.nav-link:hover::after {
+  width: 100%;
 }
